@@ -1,0 +1,12 @@
+committed
+	-corrected pitch on ATTINY84
+	-add schottky diode to output of +5V LDO
+	-added debug led
+
+pending
+	-change capacitors in schematic to nonpolar
+	-add to bom
+		new attiny
+		diode
+		resistor arrays
+		led + resistor

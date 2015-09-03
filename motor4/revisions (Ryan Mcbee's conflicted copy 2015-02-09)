@@ -1,0 +1,7 @@
+pending
+	-change capacitors in schematic to nonpolar
+	-add to bom
+		new attiny
+		diode
+		resistor arrays
+		led + resistor

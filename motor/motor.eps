@@ -1,0 +1,176 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: EAGLE Drawing /home/evan/Dropbox/IEEE ROV 2014/Electronics/Boards/Motor Controllers/motor.brd
+%%Creator: EAGLE
+%%Pages: 1
+%%BoundingBox: 0 0 114 114
+%%EndComments
+
+% Coordinate transfer:
+
+/EU { 254 div 0.072 mul } def
+/inch { 72 mul } def
+
+% Linestyle:
+
+1 setlinecap
+1 setlinejoin
+
+% Drawing functions:
+
+/l {  % draw a line
+   /lw exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   newpath
+   x1 EU y1 EU moveto
+   x2 EU y2 EU lineto
+   lw EU setlinewidth
+   stroke
+   } def
+
+/h {  % draw a hole
+   /d  exch def
+   /y  exch def
+   /x  exch def
+   d 0 gt {
+     newpath
+     x EU y EU d 2 div EU 0 360 arc
+     currentgray dup
+     1 exch sub setgray
+     fill
+     setgray
+     } if
+   } def
+
+/b {  % draw a bar
+   /an exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   /w2 x2 x1 sub 2 div EU def
+   /h2 y2 y1 sub 2 div EU def
+   gsave
+   x1 x2 add 2 div EU y1 y2 add 2 div EU translate
+   an rotate
+   newpath
+   w2     h2     moveto
+   w2 neg h2     lineto
+   w2 neg h2 neg lineto
+   w2     h2 neg lineto
+   closepath
+   fill
+   grestore
+   } def
+
+/c {  % draw a circle
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU 0 360 arc
+   stroke
+   } def
+
+/a {  % draw an arc
+   /lc exch def
+   /ae exch def
+   /as exch def
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   lw rd 2 mul gt {
+     /rd rd lw 2 div add 2 div def
+     /lw rd 2 mul def
+     } if
+   currentlinecap currentlinejoin
+   lc setlinecap 0 setlinejoin
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU as ae arc
+   stroke
+   setlinejoin setlinecap
+   } def
+
+/p {  % draw a pie
+   /d exch def
+   /y exch def
+   /x exch def
+   newpath
+   x EU y EU d 2 div EU 0 360 arc
+   fill
+   } def
+
+/edge { 0.20710678119 mul } def
+
+/o {  % draw an octagon
+   /an exch def
+   /dy exch def
+   /dx exch def
+   /y  exch def
+   /x  exch def
+   gsave
+   x EU y EU translate
+   an dx dy lt { 90 add /dx dy /dy dx def def } if rotate
+   newpath
+      0 dx 2 div sub EU                    0 dy edge  add EU moveto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div add EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div add EU lineto
+      0 dx 2 div add EU                    0 dy edge  add EU lineto
+      0 dx 2 div add EU                    0 dy edge  sub EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div sub EU lineto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div sub EU lineto
+      0 dx 2 div sub EU                    0 dy edge  sub EU lineto
+   closepath
+   fill
+   grestore
+   } def
+
+-30702 -47203 -27654 -37297 90.0 b
+-30702 -40703 -27654 -30797 90.0 b
+-30702 -34203 -27654 -24297 90.0 b
+-30702 -27703 -27654 -17797 90.0 b
+-30702 -21203 -27654 -11297 90.0 b
+-30702 -14703 -27654 -4797 90.0 b
+-30702 -8203 -27654 1703 90.0 b
+-30702 -1703 -27654 8203 90.0 b
+-30702 4797 -27654 14703 90.0 b
+-30702 11297 -27654 21203 90.0 b
+-30702 17797 -27654 27703 90.0 b
+-30702 24297 -27654 34203 90.0 b
+-30702 30797 -27654 40703 90.0 b
+-30702 37297 -27654 47203 90.0 b
+27654 37297 30702 47203 90.0 b
+27654 30797 30702 40703 90.0 b
+27654 24297 30702 34203 90.0 b
+27654 17797 30702 27703 90.0 b
+27654 11297 30702 21203 90.0 b
+27654 4797 30702 14703 90.0 b
+27654 -1703 30702 8203 90.0 b
+27654 -8203 30702 1703 90.0 b
+27654 -14703 30702 -4797 90.0 b
+27654 -21203 30702 -11297 90.0 b
+27654 -27703 30702 -17797 90.0 b
+27654 -34203 30702 -24297 90.0 b
+27654 -40703 30702 -30797 90.0 b
+27654 -47203 30702 -37297 90.0 b
+-55788 156738 -46788 169238 292.5 b
+-40544 163052 -31544 175552 292.5 b
+-40219 146727 -33719 153227 292.5 b
+-39941 131937 -32441 139437 292.5 b
+-31164 135573 -23664 143073 292.5 b
+-37036 111468 -28036 123968 292.5 b
+-21792 117782 -12792 130282 292.5 b
+-121615 -25308 -112615 -12808 180.0 b
+-121615 -41808 -112615 -29308 180.0 b
+-137865 -30558 -131365 -24058 180.0 b
+-151865 -26308 -144365 -18808 180.0 b
+-151865 -35808 -144365 -28308 180.0 b
+-170615 -25308 -161615 -12808 180.0 b
+-170615 -41808 -161615 -29308 180.0 b
+35354 163052 44354 17

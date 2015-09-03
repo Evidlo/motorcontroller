@@ -1,0 +1,28 @@
+<Qucs Dataset 0.0.17>
+<indep time 1>
+  +0.00000000000e+00
+</indep>
+<dep V2.It time>
+  -7.95278743663e-12
+</dep>
+<dep V1.It time>
+  +5.09999999995e-15
+</dep>
+<dep vg.Vt time>
+  +5.00000000000e+01
+</dep>
+<dep vout.Vt time>
+  +1.98408409405e-08
+</dep>
+<dep _net0.Vt time>
+  +5.00000000000e+01
+</dep>
+<dep _net1.Vt time>
+  +5.00000000000e+01
+</dep>
+<dep _net3.Vt time>
+  +2.54999999998e-10
+</dep>
+<dep _net2.Vt time>
+  +0.00000000000e+00
+</dep>
